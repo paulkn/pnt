@@ -5,11 +5,11 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Hero from '../components/Hero'
 
-export const AboutPageTemplate = ({ title, content, contentComponent, image }) => {
+export const EventsPageTemplate = ({ title, content, contentComponent, image }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <div className="about">
+    <div className="events">
       <Hero title={title} image={image} />
       <section className="section section--gradient" style={{ marginTop: `-48px` }}>
           <div className="container">
@@ -26,19 +26,19 @@ export const AboutPageTemplate = ({ title, content, contentComponent, image }) =
   )
 }
 
-AboutPageTemplate.propTypes = {
+EventsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const AboutPage = ({ data }) => {
+const EventsPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <AboutPageTemplate
+      <EventsPageTemplate
         contentComponent={HTMLContent}
         image={post.frontmatter.image}
         title={post.frontmatter.title}
@@ -48,14 +48,14 @@ const AboutPage = ({ data }) => {
   )
 }
 
-AboutPage.propTypes = {
+EventsPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default AboutPage
+export default EventsPage
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const eventsPageQuery = graphql`
+  query EventsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
