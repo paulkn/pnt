@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: P & N Trucking
-image: /img/p&nbackground.jpg
+image: /img/p-nbackgroundl.jpg
 ---
 ## P & N Trucking
 
