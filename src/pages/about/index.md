@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: About
-image: /img/p&nbackground.jpg
+image: /img/p-nbckgd.jpg
 ---
 ### About
 
