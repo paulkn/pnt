@@ -2,9 +2,9 @@ var proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
-    title: 'Site Title',
+    title: 'P & N Trucking Inc',
     description:
-      'Site Description',
+      'P & N Trucking Inc Durham, NC',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
