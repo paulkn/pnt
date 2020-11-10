@@ -1,8 +1,7 @@
 ---
 templateKey: events-page
 title: Events
-image: /img/p&nbackground.jpg
-
+image: /img/p-nbckgd.jpg
 ---
 # **Events**
 
