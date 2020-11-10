@@ -1,6 +1,6 @@
 ---
 templateKey: contact-page
 title: Contact
-image: /img/p&nbackground.jpg
+image: /img/p-nbckgd.jpg
 ---
 
