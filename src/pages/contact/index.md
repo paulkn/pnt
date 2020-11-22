@@ -1,6 +1,6 @@
 ---
 templateKey: contact-page
 title: Contact
-image: /img/openroad.png
+image: /img/openroad.jpg
 ---
 
